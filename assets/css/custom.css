@@ -1,0 +1,61 @@
+.tgg{
+    filter: brightness(0) invert(1);
+}
+
+.hlogo img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: 50px !important;
+}
+
+.hlogo {
+    margin-left: 10px; 
+}
+
+.alogo img{    
+        max-width: 100% !important;
+        height: auto !important;
+        width: 290px !important;
+}
+
+.navstyle {
+    background-image: url('6025648.jpg');
+    background-size: cover;
+    background-position: bottom; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-image: url('6025653.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+
+
+.home {
+    background: linear-gradient(#ffa31a,#1b1b1b);
+    font-size: 32px;
+	color: #fff;
+}
+.usericon{
+    margin-right: 20px!important;
+}
+
+.logout{
+    margin-left: 20px !important;
+    margin-right: -90px !important;
+    color: #fff !important;
+}
+
+.nav1{
+    margin-right: 50px !important;
+}
+
