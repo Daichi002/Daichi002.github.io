@@ -69,7 +69,7 @@ async function Login(e) {
 	console.log("mail",email)
 	console.log("pass",password)
 
-    // Regular expression to validate email format
+   
     const emailRegex = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 	const passwordRegex = /^(?=.*[A-Z])(?=.*[\d!@#$%^&*_+=])[A-Z\d!@#$%^&*_+=][A-Za-z\d!@#$%^&*_+=]{7,}$/;
 
@@ -79,7 +79,6 @@ async function Login(e) {
         return;
     }
 
-    // Check if email matches the email format using regular expression
     if (!emailRegex.test(email)) {
 		showAlert("Please input a valid email", "error");
         return;
@@ -92,14 +91,14 @@ async function Login(e) {
     }
 
     try {
-        // Find the user in the userData array based on email and password
+     
         const user = userData.find(user => user.email === email && user.password === password);
 
         if (user) {
             console.log("Login successful");
             showAlert("char naka log in =w= ", "success");
             window.location.href = "home.html";
-            // Store user info in localStorage or perform other actions
+            
         } else {
             console.error("Login failed: Invalid credentials");
             showAlert("Login failed. Please check your credentials.", "error");
