@@ -75,12 +75,12 @@ async function Login(e) {
 
 
     if (!email || !password) {
-        showAlert("All fields are required", "error");
+        showAlert("All fields are required email: brix@gmail.com. password: Password1 ", "error");
         return;
     }
 
     if (!emailRegex.test(email)) {
-		showAlert("Please input a valid email", "error");
+		showAlert("Please input a valid email email: brix@gmail.com. password: Password1 ", "error");
         return;
     }
 
@@ -101,7 +101,7 @@ async function Login(e) {
             
         } else {
             console.error("Login failed: Invalid credentials");
-            showAlert("Login failed. Please check your credentials. email: brix@gmail.com. password: Password1 ", "error");
+            showAlert("Login failed. Please check your credentials.", "error");
         }
     } catch (error) {
         console.error("An error occurred during login:", error);
