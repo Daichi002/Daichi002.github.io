@@ -101,7 +101,7 @@ async function Login(e) {
             
         } else {
             console.error("Login failed: Invalid credentials");
-            showAlert("Login failed. Please check your credentials.", "error");
+            showAlert("Login failed. Please check your credentials. email: brix@gmail.com. password: Password1 ", "error");
         }
     } catch (error) {
         console.error("An error occurred during login:", error);
