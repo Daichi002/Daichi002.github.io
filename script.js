@@ -80,7 +80,7 @@ async function Login(e) {
     }
 
     if (!emailRegex.test(email)) {
-		showAlert("Please input a valid email email: brix@gmail.com. password: Password1 ", "error");
+		showAlert("Please input email: brix@gmail.com. password: Password1 ", "error");
         return;
     }
 
