@@ -75,12 +75,12 @@ async function Login(e) {
 
 
     if (!email || !password) {
-        showAlert("All fields are required email: brix@gmail.com. password: Password1 ", "error");
+        showAlert("All fields are required", "error");
         return;
     }
 
     if (!emailRegex.test(email)) {
-		showAlert("Please input email: brix@gmail.com. password: Password1 ", "error");
+		showAlert("Email can only contain letters, numbers, '-', '_', '@', and '.'", "error");
         return;
     }
 
@@ -96,7 +96,7 @@ async function Login(e) {
 
         if (user) {
             console.log("Login successful");
-            showAlert("char naka log in =w= ", "success");
+            showAlert("Log in Successfull ", "success");
             window.location.href = "home.html";
             
         } else {
@@ -149,7 +149,7 @@ if (repasswords != (passwords)) {
 
 try {
     // Perform signup logic here (not implemented in the sample)
-    showAlert("Signup successful! =w= ", "success");
+    showAlert("Signup successful! ", "success");
 } catch (error) {
     console.error('Error during signup:', error);
     showAlert("An error occurred during signup. Please try again later.", "error");
